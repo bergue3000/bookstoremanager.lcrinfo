@@ -14,7 +14,7 @@
 	<name>bookstoremanager</name>
 	<description>Bookstore Manager project</description>
 	<properties>
-		<java.version>15</java.version>
+		<java.version>14</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -116,7 +116,7 @@
 					<plugin>
 						<groupId>org.jacoco</groupId>
 						<artifactId>jacoco-maven-plugin</artifactId>
-						<version>0.8.7</version>
+						<version>0.8.5</version>
 						<executions>
 							<execution>
 								<goals>
