@@ -2,11 +2,7 @@ dist: xenial
 language: java
 sudo: false
 jdk: openjdk14
-intall: true
-
-before_install:
-  - chmod +x mvnw
-
+install: true
 addons:
   sonarcloud:
     organization: $SONAR_ORGANIZATION
@@ -16,5 +12,7 @@ script:
 cache:
   directories:
     - $HOME/.m2
-    - $home/.sonar/cache
+    - $HOME/.sonar/cache
 
+before_install:
+  - chmod +x mvnw
