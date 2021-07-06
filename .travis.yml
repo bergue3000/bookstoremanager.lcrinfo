@@ -3,7 +3,11 @@ language: java
 sudo: false
 jdk: openjdk14
 intall: true
-aaddons:
+
+before_install:
+  - chmod +x mvnw
+
+addons:
   sonarcloud:
     organization: $SONAR_ORGANIZATION
     token: $SONAR_TOKEN
@@ -14,5 +18,3 @@ aaddons:
       - $HOME/.m2
       - $home/.sonar/cache
 
-before_install:
-  - chmod +x mvnw
